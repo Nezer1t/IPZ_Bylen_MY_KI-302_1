@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Стиль для кнопок  -->
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="#FF69B4" />
+        <!--  Рожевий колір  -->
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="Margin" Value="10" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="Border">
+        <Setter Property="Background" Value="#F8E1F4" />
+        <!--  Світло-фіолетовий колір  -->
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="LabelStyle">
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="0,0,10,10" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Foreground" Value="#D5006D" />
+        <!--  Темно-рожевий  -->
+    </Style>
+
+    <!--  Стиль для відображення значень  -->
+    <Style TargetType="TextBlock" x:Key="ValueStyle">
+        <Setter Property="Margin" Value="0,0,0,10" />
+        <Setter Property="Padding" Value="5" />
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Foreground" Value="#AB47BC" />
+        <!--  Фіолетовий  -->
+    </Style>
+</ResourceDictionary>
